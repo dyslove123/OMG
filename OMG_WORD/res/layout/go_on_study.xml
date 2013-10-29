@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f6f7"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_interface"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#6699ff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/setting"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/add" />
+
+        <Button
+            android:id="@+id/setting"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/word_study_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="单词学习"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/word_study_line1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/word_study_spell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="immigrate"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageButton
+            android:id="@+id/word_study_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/sound" >
+        </ImageButton>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/word_study_line2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/word_study_soundmark_left_bracket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="[" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/word_study_soundmark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="音标"
+            android:textColor="#898e93" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/word_study_soundmark_right_bracket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="]" >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/word_study_line3"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/boundary"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/boundary" >
+        </ImageView>
+    </LinearLayout>
+    
+    <TableLayout 
+        android:id="@+id/word_study_explain"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+        <TableRow >
+            <TextView 
+                android:id="@+id/word_propety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vt."
+                android:textColor="#898e93"
+                />
+            <TextView
+                android:id="@+id/word_meaning"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(从国外)移居"></TextView>
+                "
+        </TableRow>
+    </TableLayout>
+    
+    <LinearLayout 
+        android:id="@+id/word_study_line4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <TextView 
+            android:id="@+id/es"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="He mmegreated from Ulster in 1848."/>
+        
+        <TextView 
+            android:id="@+id/translation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#898e93"
+            android:text="他1848年从阿尔斯特移民到这里。"/>
+        
+    </LinearLayout>
+
+</LinearLayout>
