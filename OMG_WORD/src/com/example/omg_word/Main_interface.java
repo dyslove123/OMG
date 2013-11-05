@@ -3,19 +3,24 @@ package com.example.omg_word;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Main_interface extends Activity {
 
-	public void OnCreate(Bundle savedInstanceState) {
+	Button set = null;
+	Button word_study = null;
+	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.main);
 
-		Button set = (Button) findViewById(R.id.setting);
-		Button word_study = (Button) findViewById(R.id.word_study);
+		
+		set = (Button) findViewById(R.id.setting);
+		word_study = (Button) findViewById(R.id.word_study);
 
 		set.setOnClickListener(new OnClickListener() {
 
@@ -27,11 +32,11 @@ public class Main_interface extends Activity {
 				// TODO Auto-generated method stub
 
 				startActivity(intent);
-				Main_interface.this.finish();
+				finish();
 			}
 		});
 
-		set.setOnClickListener(new OnClickListener() {
+		word_study.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
@@ -46,5 +51,23 @@ public class Main_interface extends Activity {
 		});
 
 	}
+	
+	//有关按返回键退出的设定
+	private long exitTime = 0;
+	@Override 
+	public boolean onKeyDown(int keyCode, KeyEvent event) { 
+	if(keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN){ 
+	if((System.currentTimeMillis()-exitTime) > 2000){ 
+	Toast.makeText(getApplicationContext(), "再按一次退出程序", Toast.LENGTH_SHORT).show();
+	exitTime = System.currentTimeMillis(); 
+	} else { 
+	finish(); 
+	System.exit(0); 
+	} 
+	return true; 
+	} 
+	return super.onKeyDown(keyCode, event); 
+	} 
+	
 
 }

@@ -22,11 +22,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.omg_word.Main_interface" >
+        <activity
+            android:name="com.example.omg_word.Main_interface"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
-        <activity android:name="com.example.omg_word.Setting" >
+        <activity
+            android:name="com.example.omg_word.Setting"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
-        <activity android:name="com.example.omg_word.Word_Study" >
+        <activity
+            android:name="com.example.omg_word.Word_Study"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.example.omg_word.Modify_StudyPlan"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
     </application>
 
