@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f6f7"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/top_interface"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="#6699ff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/setting"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/word_study_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="修改学习计划"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    
+     <LinearLayout 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         
+         android:background="#D3D3D3"
+         android:orientation="vertical">
+         
+         <TextView 
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="词库列表"
+             android:gravity="center_vertical"
+
+             android:layout_marginLeft="10dp"
+             android:textColor="#808080"/>
+     </LinearLayout>
+     
+     <ListView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:divider="#000000"
+         android:dividerHeight="2px"
+         android:headerDividdersEnabled="false" >
+
+</ListView>
+
+</LinearLayout>
