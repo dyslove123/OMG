@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="android.app.Activity"/>
+<fullyQualifiedTypeName name="com.example.omg_word.Setting"/>
+<fullyQualifiedTypeName name="com.example.omg_word.Word_Study"/>
+<fullyQualifiedTypeName name="android.widget.DatePicker"/>
+<fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="android.R.integer"/>
+<fullyQualifiedTypeName name="android.widget.ImageView"/>
+<fullyQualifiedTypeName name="android.R.anim"/>
+<fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="android.R.drawable"/>
+<fullyQualifiedTypeName name="com.example.omg_word.R.drawable"/>
+<fullyQualifiedTypeName name="com.example.omg_word.Button_FinishTime"/>
+<fullyQualifiedTypeName name="android.widget.LinearLayout"/>
+<fullyQualifiedTypeName name="java.util.Locale"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="java.util.Calendar"/>
+<fullyQualifiedTypeName name="android.app.DatePickerDialog"/>
+<fullyQualifiedTypeName name="android.app.DatePickerDialog.OnDateSetListener"/>
+<fullyQualifiedTypeName name="com.example.omg_word.Modify_StudyPlan"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.os.Handler"/>
+<fullyQualifiedTypeName name="java.lang.Runnable"/>
+<fullyQualifiedTypeName name="android.view.KeyEvent"/>
+<fullyQualifiedTypeName name="javax.security.auth.PrivateCredentialPermission"/>
+<fullyQualifiedTypeName name="android.widget.Toast"/>
+<fullyQualifiedTypeName name="android.os.Bundle"/>
+<fullyQualifiedTypeName name="com.example.omg_word.R.layout"/>
+<fullyQualifiedTypeName name="android.widget.CalendarView"/>
+<fullyQualifiedTypeName name="android.widget.CalendarView.OnDateChangeListener"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="com.example.omg_word.R.id"/>
+<fullyQualifiedTypeName name="android.util.Log"/>
+<fullyQualifiedTypeName name="android.os.CountDownTimer"/>
+<fullyQualifiedTypeName name="java.lang.Override"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="com.example.omg_word.Welcome"/>
+<fullyQualifiedTypeName name="com.example.omg_word.Main_interface"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,7 @@
+package com.example.omg_word;
+
+import android.widget.LinearLayout;
+
+public class Button_FinishTime extends LinearLayout {
+
+}

@@ -46,13 +46,14 @@ public final class R {
         public static final int sound=0x7f020016;
     }
     public static final class id {
-        public static final int action_settings=0x7f080033;
+        public static final int action_settings=0x7f080035;
         public static final int alert_img=0x7f08002a;
         public static final int alert_name=0x7f08002b;
         public static final int alert_time=0x7f08002c;
         public static final int alert_time_button=0x7f08002d;
         public static final int boundary=0x7f08000c;
         public static final int button3=0x7f080021;
+        public static final int calendar_date=0x7f080034;
         public static final int dictionary_name=0x7f080022;
         public static final int enabled=0x7f080000;
         public static final int encourage_checkbox=0x7f08002f;
@@ -70,6 +71,7 @@ public final class R {
         public static final int progressBar2=0x7f08001f;
         public static final int setting=0x7f080002;
         public static final int study_alert=0x7f080028;
+        public static final int study_calendar=0x7f080033;
         public static final int study_plan_setting=0x7f080027;
         public static final int studyplan_memo=0x7f080025;
         public static final int tableRow1=0x7f080029;
@@ -100,13 +102,17 @@ public final class R {
         public static final int word_study_title=0x7f080003;
     }
     public static final class layout {
-        public static final int compound_button=0x7f030000;
-        public static final int go_on_study=0x7f030001;
-        public static final int loading_main=0x7f030002;
-        public static final int main=0x7f030003;
-        public static final int modify_studyplan=0x7f030004;
-        public static final int setting=0x7f030005;
-        public static final int welcome=0x7f030006;
+        public static final int alpha_in=0x7f030000;
+        public static final int alpha_out=0x7f030001;
+        public static final int compound_button=0x7f030002;
+        public static final int dictionary_choose=0x7f030003;
+        public static final int go_on_study=0x7f030004;
+        public static final int loading_main=0x7f030005;
+        public static final int main=0x7f030006;
+        public static final int modify_studyplan=0x7f030007;
+        public static final int setting=0x7f030008;
+        public static final int study_calendar=0x7f030009;
+        public static final int welcome=0x7f03000a;
     }
     public static final class menu {
         public static final int welcome=0x7f070000;
