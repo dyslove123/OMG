@@ -1,15 +1,35 @@
 package com.example.omg_word;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class Word_Study extends Activity {
-	
-public void OnClick (Bundle savedInstanceState) {
-		
-		super.onCreate(savedInstanceState);
-		
-		setContentView(R.layout.go_on_study);
-	}
 
+	Button back = null;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+
+		super.onCreate(savedInstanceState);
+
+		setContentView(R.layout.go_on_study);
+
+		back = (Button) findViewById(R.id.wordstudy_backto_main);
+		back.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent();
+				intent.setClass(Word_Study.this, Main_interface.class);
+				startActivity(intent);
+				finish();
+			}
+
+		});
+	}
 }

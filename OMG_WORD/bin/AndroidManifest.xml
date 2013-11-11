@@ -25,22 +25,37 @@
         <activity
             android:name="com.example.omg_word.Main_interface"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         </activity>
         <activity
             android:name="com.example.omg_word.Setting"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         </activity>
         <activity
             android:name="com.example.omg_word.Word_Study"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         </activity>
         <activity
             android:name="com.example.omg_word.Modify_StudyPlan"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.omg_word.Study_Calendar"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.omg_word.Ecourage_Mode"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.omg_word.Using_Help"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
         </activity>
     </application>
 
