@@ -13,7 +13,7 @@
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/setting"
+            android:id="@+id/calendar_back"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

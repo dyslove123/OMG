@@ -1,13 +1,18 @@
 package com.example.omg_word;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.CalendarView;
 import android.widget.TextView;
 import android.widget.CalendarView.OnDateChangeListener;
 
 public class Study_Calendar extends Activity {
 
+	Button back = null;
 	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -26,5 +31,20 @@ public class Study_Calendar extends Activity {
 				
 			}
 		});
+		
+		back = (Button)findViewById(R.id.calendar_back);
+		back.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent();
+				intent.setClass(Study_Calendar.this,Main_interface.class);
+				startActivity(intent);
+				Study_Calendar.this.finish();
+				
+			}
+		});
+		
 	}
 }

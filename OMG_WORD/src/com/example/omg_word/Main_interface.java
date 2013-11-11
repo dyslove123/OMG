@@ -13,15 +13,16 @@ public class Main_interface extends Activity {
 
 	Button set = null;
 	Button word_study = null;
+	Button calendar = null;
+
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.main);
 
-		
 		set = (Button) findViewById(R.id.setting);
 		word_study = (Button) findViewById(R.id.word_study);
-
+		calendar = (Button) findViewById(R.id.calendar_button);
 		set.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -50,24 +51,38 @@ public class Main_interface extends Activity {
 			}
 		});
 
+		calendar.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				Intent intent = new Intent();
+				intent.setClass(Main_interface.this, Study_Calendar.class);
+				startActivity(intent);
+				Main_interface.this.finish();
+			}
+		});
+
 	}
-	
-	//有关按返回键退出的设定
+
+	// 按两次退出
 	private long exitTime = 0;
-	@Override 
-	public boolean onKeyDown(int keyCode, KeyEvent event) { 
-	if(keyCode == KeyEvent.KEYCODE_BACK && event.getAction() == KeyEvent.ACTION_DOWN){ 
-	if((System.currentTimeMillis()-exitTime) > 2000){ 
-	Toast.makeText(getApplicationContext(), "再按一次退出程序", Toast.LENGTH_SHORT).show();
-	exitTime = System.currentTimeMillis(); 
-	} else { 
-	finish(); 
-	System.exit(0); 
-	} 
-	return true; 
-	} 
-	return super.onKeyDown(keyCode, event); 
-	} 
-	
+
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode == KeyEvent.KEYCODE_BACK
+				&& event.getAction() == KeyEvent.ACTION_DOWN) {
+			if ((System.currentTimeMillis() - exitTime) > 2000) {
+				Toast.makeText(getApplicationContext(), "再按一次退出程序",
+						Toast.LENGTH_SHORT).show();
+				exitTime = System.currentTimeMillis();
+			} else {
+				finish();
+				System.exit(0);
+			}
+			return true;
+		}
+		return super.onKeyDown(keyCode, event);
+	}
 
 }
