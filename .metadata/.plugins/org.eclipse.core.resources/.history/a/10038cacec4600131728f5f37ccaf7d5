@@ -1,0 +1,29 @@
+package com.example.omg_word;
+
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.LinearLayout;
+
+
+public class Setting extends Activity {
+	
+	Button back = null;
+	LinearLayout modify_studyplan = null;
+	LinearLayout everyday_study_elert = null;
+	LinearLayout set_everyday_study_elert = null;
+	LinearLayout ecourage_mode = null;
+	LinearLayout set_ecourage_mode = null;
+	LinearLayout using_help = null;
+	
+	public void onCreate(Bundle savedInstanceState) {
+		
+		super.onCreate(savedInstanceState);
+		
+		setContentView(R.layout.setting);
+		
+		back = (Button) findViewById(R.id.setting_back);
+		modify_studyplan = (LinearLayout) findViewById(R.id.study_plan_setting);
+		everyday_study_elert = (LinearLayout) findViewById(R.id.alert_name);
+	}
+}
